@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "outDir": "./public/build",
+      "noImplicitAny": true,
+      "module": "es6",
+      "target": "es5",
+      "jsx": "react",
+      "allowJs": false,
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true
+    }
+  }
