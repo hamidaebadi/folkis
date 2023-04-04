@@ -1,0 +1,6 @@
+backend/build/
+dist/
+jest.config.ts
+client/webpack.config.js
+**/coverage/
+dist/

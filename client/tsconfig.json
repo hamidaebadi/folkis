@@ -1,17 +1,13 @@
 {
-    "compilerOptions": {
-      "lib": [
-        "dom",
-        "dom.iterable",
-        "esnext"
-      ],
-      "outDir": "./public/build",
-      "noImplicitAny": true,
-      "module": "es6",
-      "target": "es5",
-      "jsx": "react",
-      "allowJs": false,
-      "moduleResolution": "node",
-      "allowSyntheticDefaultImports": true
-    }
+  "compilerOptions": {
+    "outDir": "../dist",
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "moduleResolution": "node" ,
+    "sourceMap": true,
+    "lib": ["es5", "es6", "dom"],
+    "allowSyntheticDefaultImports": true           
   }
+}

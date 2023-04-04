@@ -1,4 +1,32 @@
 html, body{
     margin: 0;
     padding: 0;
+    background-color: #F4F4F4;
+}
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+.sidebar {
+    height: 770px;
+    width: 15%;
+    position: fixed;
+    background-color: white;
+    overflow-x: hidden;
+    padding: 20px;
+    border-radius: 9px;
+    margin: 84px 0 0 10px;
+}
+.sidebar-footer {
+    position: absolute;
+    width: 90%;
+    height: 150px;
+    margin-top:500px;
+    opacity: 90%;
+    padding: 20px;
 }
