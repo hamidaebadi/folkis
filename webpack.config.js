@@ -1,19 +1,20 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = () => {
     return {
         entry: './client/src/index.tsx',
         output: {
-        path: path.resolve(__dirname, './public/build'),
-        filename: 'main.js'
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js'
         },
         devServer: {
-            static: path.resolve(__dirname, './public/build'),
+            static: path.resolve(__dirname, 'dist'),
             compress: true,
             port: 3000,
             open: true
         },
-        devtool: 'source-map',
+        devtool: 'inline-source-map',
         module: {
             rules: [
               {
@@ -39,6 +40,11 @@ const config = () => {
           resolve: {
             extensions: ['.js', '.jsx', '.ts', '.tsx'],
           },
+          plugins: [
+            new HtmlWebpackPlugin({
+              template: './public/index.html',
+            }),
+          ],
     }
 }
 

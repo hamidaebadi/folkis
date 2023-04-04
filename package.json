@@ -13,8 +13,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production",
-    "dev:client": "webpack serve --mode=development",
-    "dev:server": "ts-node-dev ./server/src/index.ts",
+    "start:client": "webpack serve --mode=development",
+    "start:server": "ts-node-dev ./server/src/index.ts",
     "lint": "eslint --ext .ts ."
   },
   "repository": {
@@ -37,7 +37,10 @@
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "@typescript-eslint/parser": "^5.57.0",
     "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
     "eslint": "^8.37.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.2",
     "ts-loader": "^9.4.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.3",
