@@ -14,6 +14,8 @@ const config = () => ({
     compress: true,
     port: 3000,
     open: true,
+    historyApiFallback: true,
+    hot: true,
   },
   devtool: 'inline-source-map',
   module: {
