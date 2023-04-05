@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
-// eslint-disable-next-line import/no-unresolved
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = () => ({
@@ -24,13 +25,7 @@ const config = () => ({
           loader: 'ts-loader',
         },
       },
-      {
-        test: /\.(ts|tsx)$/,
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-react', '@babel/preset-env'],
-        },
-      },
+      
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],

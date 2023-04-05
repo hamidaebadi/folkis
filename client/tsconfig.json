@@ -1,13 +1,18 @@
 {
   "compilerOptions": {
     "outDir": "../dist",
-    "noImplicitAny": true,
-    "module": "es6",
     "target": "es5",
-    "jsx": "react",
-    "moduleResolution": "node" ,
-    "sourceMap": true,
     "lib": ["es5", "es6", "dom"],
-    "allowSyntheticDefaultImports": true           
-  }
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "ES6",
+    "moduleResolution": "node",
+    "jsx": "react"
+  },
+  "include": [
+    "src"
+  ]
 }
