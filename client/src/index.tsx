@@ -9,7 +9,10 @@ import './main.css';
 import App from './App';
 import Error from './pages/Error';
 import DashboardPage from './pages/Dashboard';
-
+import Workers from './pages/Workers';
+import ShiftSheets from './pages/ShiftSheets';
+import Settings from './pages/Settings';
+import Profile from './pages/Profile';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +23,22 @@ const router = createBrowserRouter([
       {
         path: "dashboard",
         element: <DashboardPage />
+      },
+      {
+        path: "workers",
+        element: <Workers />
+      },
+      {
+        path: "shift-sheets",
+        element: <ShiftSheets />
+      },
+      {
+        path: "settings",
+        element: <Settings />
+      },
+      {
+        path: "my-profile",
+        element: <Profile />
       }
     ]
   },

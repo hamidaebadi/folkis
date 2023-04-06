@@ -5,10 +5,17 @@ import Navbar from './components/Navbar/Navbar';
 
 const App = () => {
   return (
-    <div className="main-container">
+    <div>
       <Navbar />
-      <Sidebar />
-      <Outlet />
+      <div className='root-panel'>
+        <Sidebar />
+        
+        <div className='child-panel'>
+          <Outlet />
+        </div>
+      </div>
+      
+      
     </div>
   );
 }

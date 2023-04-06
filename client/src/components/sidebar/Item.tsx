@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
-const Item = ({title}:{title: string}) => {
+const Item = ({title, link}:{title: string, link: string}) => {
     return(
         <div className="side-list-item">
-            <Link to={title.toLowerCase()}>{title}</Link>
+            <Link to={link}>{title}</Link>
         </div>
     )
 }
