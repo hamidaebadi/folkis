@@ -8,6 +8,7 @@ const config = () => ({
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/'
   },
   devServer: {
     static: path.resolve(__dirname, 'dist'),
@@ -15,7 +16,6 @@ const config = () => ({
     port: 3000,
     open: true,
     historyApiFallback: true,
-    hot: true,
   },
   devtool: 'inline-source-map',
   module: {
