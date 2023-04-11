@@ -2,6 +2,7 @@ html, body{
     margin: 0;
     padding: 0;
     background-color: #F4F4F4;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 .navbar {
     overflow: hidden;
@@ -16,33 +17,32 @@ html, body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: red;
     margin: 84px 0 0 10px;
 }
 
 .child-panel {
-    background-color: aqua;
+    background-color: rgb(249, 252, 252);
     width: 82%;
 }
 
 /* ----------- Sidebar Design---------------------------- */
-.sidebar {
+.sidebar-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 770px;
     width: 15%;
-    background-color: bisque;
     overflow-x: hidden;
     padding: 20px;
     border-radius: 9px;
     outline-style: none;
+    background-color:rgba(255, 255, 255, 0.945);
+    
 }
 .sidebar-footer {
     width: 90%;
     opacity: 90%;
-    background-color: green;
 }
 
 .side-list {
@@ -50,17 +50,37 @@ html, body{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: aqua;
     width: 100%;
     height: 300px;
 }
-.side-list-item {
-    background-color: darkolivegreen;
+.side-link{
     width: 100%;
     text-align: center;
     padding: 20px 0 20px 0;
+    text-decoration: none;
+    color: black;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    box-shadow: 0.4px 0.5px 2px 1px rgb(0, 112, 126);
+    
+}
+.side-link:hover{
+    background-color: #07b3cdf6;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
 }
 
+.side-link-active{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0.4px 0.5px 2px 1px rgb(0, 112, 126);
+    background-color: #07b3cdf6;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
 /* ----------- Sidebar Design End---------------------------- */
 /* ---------------------------------------------------------- */
 .profile-card{
@@ -69,7 +89,7 @@ html, body{
     width: 100%;
     align-items: center;
     height: 30%;
-    background-color: white;
+     /*background-color: white; */
     justify-content: space-around;
 }
 .profile-pic {

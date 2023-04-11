@@ -5,7 +5,7 @@ import ProfileCard from "../ProfileCard/ProfileCard";
 
 const Sidebar = () => {
     return(
-        <div className="sidebar">
+        <div className="sidebar-wrapper">
         <ProfileCard />
         <ItemList />
         <SidebarFooter />

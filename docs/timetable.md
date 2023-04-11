@@ -6,7 +6,8 @@
 |05.04.2023  | 2 |  Configuring baic routing with React Router |
 |06.04.2023  | 2 |  Nested routing, profile card component |
 |10.04.2023  | 3 |  Added new components to the strucutre, updating shift sheets page |
+|11.04.2023  | 3 |  Adding Css styles into ShiftSheet page | Refactore routing | Page design |
 
 | Total hours |
 |-------------|
-|     15    |
+|     18    |
