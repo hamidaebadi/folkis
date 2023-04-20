@@ -10,7 +10,10 @@
 |13.04.2023  | 3 |  Database design for applicaiton|
 |14.04.2023  | 4 |  Design and use Button component, design shift-card component|
 |15.04.2023  | 2 |  Redesigb and refactore Button component, continue designing shift-card component|
+|17.04.2023  | 2 |  Add modal component |
+|18.04.2023  | 3 |  Design modal and new form for adding shift list |
+
 
 | Total hours |
 |-------------|
-|     27    |
+|     32    |
