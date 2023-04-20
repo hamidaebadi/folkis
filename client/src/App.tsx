@@ -8,7 +8,9 @@ const App = () => {
     <div>
       <Navbar />
       <div className='root-panel'>
+        <div>
         <Sidebar />
+        </div>
         
         <div className='child-panel'>
           <Outlet />

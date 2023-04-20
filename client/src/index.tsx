@@ -11,7 +11,7 @@ import './main.css';
 import App from './App';
 import Error from './pages/Error';
 import DashboardPage from './pages/Dashboard';
-import Workers from './pages/Workers';
+import Workers from './pages/Workers/Workers';
 import Settings from './pages/Settings';
 import Profile from './pages/Profile';
 import ShiftSheets from './pages/ShiftSheets/ShiftSheets';

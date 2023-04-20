@@ -1,15 +1,24 @@
 import React from "react";
+import {ShiftItem} from '../../types';
+import Button from "../Button/Button";
+import Tag from "../Tag/Tag";
 
-const ShiftCard = () => {
+const ShiftCard = ({id, title, start_date, end_date, desc, status}:ShiftItem) => {
     return(
         <div className="shift-card">
-            <header className="card-header">
+            <div className="card-header">
+                <div className="card-period">
+                    {start_date} - {end_date}
+                </div>
+                {title} <br />
                 
-            </header>
+            </div>
             <div className="card-body">
-
+                {desc}
             </div>
             <div className="card-footer">
+                <Button color="PRIMARY" size="MEDIUM" asLink path={`view/${id}`}>Tarkista</Button>
+                <Tag text={status=='ACTIVE'? 'Voimassa':'Vanhentunut'} size="SMALL" status={status}/>
             </div>
         </div>
     )

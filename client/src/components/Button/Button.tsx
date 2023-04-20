@@ -1,10 +1,24 @@
 import React from "react";
-import {ButtonType ,ButtonSize} from '../../types';
+import {ButtonColor, ButtonSize} from '../../types';
+import { Link } from "react-router-dom";
 
-const Button = ({type, size, children}: {type: ButtonType, size:ButtonSize, children: React.ReactNode}) => {
-    
+const Button = ({color, size, asLink, path, children, ...props}: {
+    color: ButtonColor, 
+    size: ButtonSize,
+    asLink?: boolean,
+    path?: string,
+    children: React.ReactNode,
+    [x: string]: any
+}) => {
+    if(asLink){
+        return(
+            <Link className={`btn-${color.toLowerCase()} btn-${size.toLowerCase()}`} to={path}>
+                {children}
+            </Link>
+        )
+    }
     return(
-        <button className={`btn-${type.toLowerCase()} btn-${size.toLowerCase()}`}>
+        <button className={`btn-${color.toLowerCase()} btn-${size.toLowerCase()}`} {...props}>
             {children}
         </button>
     )

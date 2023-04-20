@@ -9,7 +9,8 @@
 |11.04.2023  | 3 |  Adding Css styles into ShiftSheet page, Refactore routing, Page design |
 |13.04.2023  | 3 |  Database design for applicaiton|
 |14.04.2023  | 4 |  Design and use Button component, design shift-card component|
+|15.04.2023  | 2 |  Redesigb and refactore Button component, continue designing shift-card component|
 
 | Total hours |
 |-------------|
-|     25    |
+|     27    |
