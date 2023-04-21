@@ -13,7 +13,8 @@
 |17.04.2023  | 2 |  Add modal component |
 |18.04.2023  | 3 |  Design modal and new form for adding shift list |
 |21.05.2023  | 3 |  Sidebar Redesigning, code refactoring, new compnents for employee management|
+|21.05.2023  | 3 |  Design and impelement employee listing component with a simple name-filtering functionality|
 
 | Total hours |
 |-------------|
-|     35    |
+|     38    |
