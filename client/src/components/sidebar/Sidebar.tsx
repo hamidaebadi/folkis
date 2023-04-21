@@ -1,7 +1,7 @@
-import React from "react";
-import SidebarFooter from "./SidebarFooter";
-import ItemList from "./ItemList";
-import ProfileCard from "../ProfileCard/ProfileCard";
+import React from 'react';
+import SidebarFooter from './SidebarFooter';
+import ItemList from './ItemList';
+import ProfileCard from '../ProfileCard/ProfileCard';
 
 const Sidebar = () => {
     return(

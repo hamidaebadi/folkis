@@ -18,60 +18,57 @@ html, body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 84px 0 0 5px;
+    background-color: rgba(255, 255, 255, 0.459);
 }
 
 .child-panel {
-    background-color: rgb(249, 252, 252);
-    width: 82%;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 140px;
+    width: 87%;
 }
 
 /* ----------- Sidebar Design---------------------------- */
 .sidebar-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
-    height: 770px;
-    width: 15%;
+    height: 890px;
+    width: 13%;
     overflow-x: hidden;
-    padding: 20px;
-    border-radius: 9px;
-    outline-style: none;
-    background-color:rgba(255, 255, 255, 0.945);
+    padding: 2px;
+    background-color:rgb(255, 255, 255);
     position: fixed;
     left: 0;
+    top: 0;
+    z-index: 1;
+    color: rgb(12, 12, 12);
     
 }
 .sidebar-footer {
     width: 90%;
     opacity: 90%;
+    font-size: small;
 }
 
 .side-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
     height: 300px;
 }
 .side-link{
     width: 100%;
-    text-align: center;
     padding: 20px 0 20px 0;
     text-decoration: none;
-    color: black;
-    background-color: #F4F4F4;
-    border-radius: 10px;
-    box-shadow: 0.4px 0.5px 2px 1px rgb(0, 112, 126);
+    color: rgb(11, 11, 11);
+    background-color:transparent;
+    
     
 }
 .side-link:hover{
-    background-color: #07b3cdf6;
+    background-color: rgb(1, 112, 197);
     color: rgb(255, 255, 255);
-    text-transform: uppercase;
 }
 
 .side-link-active{
@@ -79,11 +76,8 @@ html, body{
     text-align: center;
     padding: 20px 0 20px 0;
     text-decoration: none;
-    border-radius: 10px;
-    box-shadow: 0.4px 0.5px 2px 1px rgb(0, 112, 126);
-    background-color: #07b3cdf6;
+    background-color: rgb(1, 112, 197);
     color: rgb(255, 255, 255);
-    text-transform: uppercase;
 }
 
 .profile-card{
@@ -91,14 +85,14 @@ html, body{
     flex-direction: column;
     width: 100%;
     align-items: center;
-    height: 30%;
+    height: 15%;
      /*background-color: white; */
     justify-content: space-around;
 }
 .profile-pic {
     vertical-align: middle;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-color: orangered;
 }
@@ -216,11 +210,11 @@ a{
     display: flex;
     justify-content: center;
     padding: 10px;
-    position: sticky;
+    position: fixed;
     width: 100%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    top: 70px;
     z-index: 1;
-    top: 80px;
 }
 
 /*ShiftCard design*/
@@ -343,4 +337,16 @@ input.text-input{
 
 .error-msg{
     color: red;
+}
+
+/* Workers list page*/
+.workers-list-view{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.inline-search-form{
+    display: flex;
+    flex-direction: row;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const ProfileCard = () => {
     return(
@@ -9,7 +9,6 @@ const ProfileCard = () => {
             <div>
                 Manager: Hamid Aebadi
             </div>
-            <button>View Profile</button> 
         </div>
     )
 }

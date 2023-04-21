@@ -7,6 +7,7 @@ const ItemList = () => {
       <Item title='Työpöytä' link='dashboard'/>
       <Item title='Työntekijät' link='workers'/>
       <Item title='Työvuorolista' link='shift-sheets'/>
+      <Item title='Viestit' link='inbox'/>
       <Item title='Asetukset' link='settings'/>
     </div>
   );

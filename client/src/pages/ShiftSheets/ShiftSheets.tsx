@@ -1,10 +1,9 @@
-import React from "react";
+import React from 'react';
 import {Outlet} from 'react-router-dom';
 
 const ShiftSheets = () => {
     return(
-        <div className="shift-page">
-            
+        <div>
            <Outlet />
         </div>
     )

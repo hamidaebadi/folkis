@@ -2,6 +2,7 @@ export type ButtonColor = 'SUCCESS' | 'SUBMIT' | 'INFO' | 'DANGER' | 'WARNING' |
 export type ButtonSize = 'LARGE' | 'MEDIUM' |'SMALL';
 type TagSize = 'X-SMALL'|'SMALL'|'MEDIUM'|'LARGE'|'X-LARGE';
 type TagStatus = 'EXPIRED'|'NATURAL'|'AVAILABLE'|'ACTIVE'|'URGENT'|'WARNING'|'OFF'
+type EmployeeState = 'SICK'|'VACATION'|'AVAILABLE'|'ON_SHIFT'
 
 export interface ShiftItem{
     id: number,
@@ -24,5 +25,14 @@ export interface NewShiftFormValues {
     desc: string;
     start_date: string;
     end_date: string;
+}
+
+export interface EmployeeData {
+    id: number;
+    firstName: string;
+    lastName: string;
+    role: string;
+    state: EmployeeState;
+    email: string;
 }
 

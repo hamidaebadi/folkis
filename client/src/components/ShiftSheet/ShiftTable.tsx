@@ -1,52 +1,52 @@
-import React from "react";
+import React from 'react';
 
 const ShiftTable = () => {
     const employees = [
         {
             id: 1,
-            name: "Hamid Aebadi",
+            name: 'Hamid Aebadi',
             attendance: ['On', 'Off', 'On', 'Off', 'Off', 'On', 'On'],
             totalHours: 25
         },
         {
             id: 2,
-            name: "Razia Nouroozi",
+            name: 'Razia Nouroozi',
             attendance: ['On', 'Off', 'On', 'Off', 'Off', 'On', 'On'],
             totalHours: 25
         },
         {
             id: 3,
-            name: "Monika peretz",
+            name: 'Monika peretz',
             attendance: ['On', 'Off', 'On', 'Off', 'Off', 'On', 'On'],
             totalHours: 25
         },
         {
             id: 4,
-            name: "Moo",
+            name: 'Moo',
             attendance: ['On', 'Off', 'On', 'Off', 'Off', 'On', 'On'],
             totalHours: 25
         },
         {
             id: 5,
-            name: "Morten Pederson",
+            name: 'Morten Pederson',
             attendance: ['On', 'Off', 'On', 'Off', 'Off', 'On', 'On'],
             totalHours: 25
         },
         {
             id: 6,
-            name: "Ella",
+            name: 'Ella',
             attendance: ['On', 'Off', 'On', 'Off', 'Off', 'On', 'On'],
             totalHours: 25
         },
         {
             id: 7,
-            name: "Donata",
+            name: 'Donata',
             attendance: ['On', 'Off', 'On', 'Off', 'Off', 'On', 'On'],
             totalHours: 25
         },
         {
             id: 8,
-            name: "Lotta",
+            name: 'Lotta',
             attendance: ['On', 'Off', 'On', 'Off', 'Off', 'On', 'On'],
             totalHours: 25
         }

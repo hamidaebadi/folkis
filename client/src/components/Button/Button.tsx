@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import {ButtonColor, ButtonSize} from '../../types';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Button = ({color, size, asLink, path, children, ...props}: {
     color: ButtonColor, 

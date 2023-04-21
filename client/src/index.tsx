@@ -17,11 +17,14 @@ import Profile from './pages/Profile';
 import ShiftSheets from './pages/ShiftSheets/ShiftSheets';
 import ListView from './pages/ShiftSheets/ListView';
 import ShiftView from './pages/ShiftSheets/ShiftView';
+import WorkersList from './pages/Workers/WorkersList';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<App />} errorElement={<Error />}>
     <Route path='dashboard' element={<DashboardPage />}/>
-    <Route path='workers' element={<Workers />}/>
+    <Route path='workers' element={<Workers />}>
+      <Route path='' element={<WorkersList />}/>
+    </Route>
     <Route path='shift-sheets' element={<ShiftSheets />}>
       <Route path='' element={<ListView />}/>
       <Route path='view/:id' element={<ShiftView />}/>

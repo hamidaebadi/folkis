@@ -15,7 +15,8 @@
     "build": "webpack --mode=production",
     "start:client": "webpack serve --mode=development",
     "start:server": "ts-node-dev ./server/src/index.ts",
-    "lint": "eslint './client/src/**/*.{ts,tsx}'"
+    "lint": "eslint './client/src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint --fix './client/src/**/*.{ts,tsx}'"
   },
   "repository": {
     "type": "git",

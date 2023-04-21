@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 import {Formik, Form} from 'formik';
 import {NewShiftFormValues} from '../../types';
-import { DatePickerField } from "./DatePicker";
-import TextInput from "./TextInput";
-import TextareaInput from "./TextareaInput";
-import Button from "../Button/Button";
+import { DatePickerField } from './DatePicker';
+import TextInput from './TextInput';
+import TextareaInput from './TextareaInput';
+import Button from '../Button/Button';
 
 const NewShiftForm = () => {
 

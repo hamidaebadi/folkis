@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 import {ShiftItem} from '../../types';
-import Button from "../Button/Button";
-import Tag from "../Tag/Tag";
+import Button from '../Button/Button';
+import Tag from '../Tag/Tag';
 
 const ShiftCard = ({id, title, start_date, end_date, desc, status}:ShiftItem) => {
     return(
