@@ -24,7 +24,7 @@ html, body{
 .child-panel {
     background-color: rgba(255, 255, 255, 0.5);
     margin-top: 140px;
-    width: 87%;
+    width: 84%;
 }
 
 /* ----------- Sidebar Design---------------------------- */
@@ -33,15 +33,15 @@ html, body{
     flex-direction: column;
     justify-content: space-between;
     height: 890px;
-    width: 13%;
+    width: 15%;
     overflow-x: hidden;
     padding: 2px;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(30, 62, 73);
     position: fixed;
     left: 0;
     top: 0;
     z-index: 1;
-    color: rgb(12, 12, 12);
+    color: rgb(255, 255, 255);
     
 }
 .sidebar-footer {
@@ -61,14 +61,14 @@ html, body{
     width: 100%;
     padding: 20px 0 20px 0;
     text-decoration: none;
-    color: rgb(11, 11, 11);
+    color: rgb(255, 255, 255);
     background-color:transparent;
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
 .side-link:hover{
-    background-color: rgb(1, 112, 197);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(8, 44, 64);
 }
 
 .side-link-active{
@@ -76,8 +76,8 @@ html, body{
     text-align: center;
     padding: 20px 0 20px 0;
     text-decoration: none;
-    background-color: rgb(1, 112, 197);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(8, 44, 64);
 }
 
 .profile-card{
@@ -215,6 +215,7 @@ a{
     background-color: rgb(255, 255, 255);
     top: 70px;
     z-index: 1;
+    
 }
 
 /*ShiftCard design*/
@@ -344,9 +345,42 @@ input.text-input{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 30px;
 }
 
 .inline-search-form{
     display: flex;
     flex-direction: row;
+}
+
+/*Employee list table*/
+.employee-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.employee-list-headers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 80, 112, 0.353);
+}
+.employee-list-headers > div{
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+}
+.employee-list-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+}
+.employee-list-item > div{
+    width: 100%;
+    text-align: left;
+}
+.employee-list-item:hover{
+    background-color: rgb(0, 85, 145);
+    color: white;
 }

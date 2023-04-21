@@ -8,8 +8,9 @@ const SearchInput = ({...props }:
     const [field] = useField(props);
     return (
       <>
-        <input {...field} {...props} className="search-input"/>
+      <input {...field} {...props} className='text-input'/>
       </>
+        
     );
   };
 
