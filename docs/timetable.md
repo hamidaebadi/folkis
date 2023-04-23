@@ -14,7 +14,10 @@
 |18.04.2023  | 3 |  Design modal and new form for adding shift list |
 |21.05.2023  | 3 |  Sidebar Redesigning, code refactoring, new compnents for employee management|
 |21.05.2023  | 3 |  Design and impelement employee listing component with a simple name-filtering functionality|
+|22.05.2023  | 3 |  Data modeling and visualization for employee management|
+|22.05.2023  | 1 |  designing wireframe and layout for employee's creation form|
+|23.05.2023  | 3 |  Impelementation of new employee's creation form according to predesigned wireframe and data models|
 
 | Total hours |
 |-------------|
-|     38    |
+|     45    |

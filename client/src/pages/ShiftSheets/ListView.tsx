@@ -5,6 +5,7 @@ import ShiftCard from '../../components/ShiftCard/ShiftCard';
 import {ShiftItem} from '../../types';
 import ReactModal from 'react-modal';
 import NewShiftForm from '../../components/Forms/NewShiftForm';
+import { faFolderPlus } from '@fortawesome/free-solid-svg-icons';
 
 const ListView = () => {
     const initialShifts:ShiftItem[] = [
@@ -33,10 +34,13 @@ const ListView = () => {
     return(
         <>
             <TabBar>
-               {!isModalOpen && <Button type="button" color="PRIMARY" size="SMALL" onClick={handleModalEvent}>Luo lista</Button> }
+               {!isModalOpen && 
+               <Button className='btn-primary-sm'
+               icon={faFolderPlus}
+               onClick={handleModalEvent}>Luo lista</Button> }
                 
             </TabBar>
-            <ReactModal isOpen={isModalOpen} className='Modal' >
+            <ReactModal isOpen={isModalOpen} className='Modal' overlayClassName='modal_overlay'>
                 <h2>Uusi työvuorolista</h2>
                 <NewShiftForm />
                 <Button

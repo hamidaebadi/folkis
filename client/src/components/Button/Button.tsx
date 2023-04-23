@@ -1,26 +1,30 @@
 import React from 'react';
 import {ButtonColor, ButtonSize} from '../../types';
 import { Link } from 'react-router-dom';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Button = ({color, size, asLink, path, children, ...props}: {
-    color: ButtonColor, 
-    size: ButtonSize,
+const Button = ({asLink, path, children, icon,...props}: {
     asLink?: boolean,
     path?: string,
     children: React.ReactNode,
+    icon?: IconProp,
     [x: string]: any
 }) => {
     if(asLink){
         return(
-            <Link className={`btn-${color.toLowerCase()} btn-${size.toLowerCase()}`} to={path}>
+            <Link to={path}>
                 {children}
             </Link>
         )
     }
     return(
-        <button className={`btn-${color.toLowerCase()} btn-${size.toLowerCase()}`} {...props}>
-            {children}
+        <>
+        <button role='button' {...props}>
+            {icon && <FontAwesomeIcon icon={icon}/>} {children}
         </button>
+        </>
+        
     )
 }
 

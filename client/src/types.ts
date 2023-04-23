@@ -36,3 +36,16 @@ export interface EmployeeData {
     email: string;
 }
 
+export interface EducationItem{
+    id: string;
+    title: string;
+    institution_name: string;
+    graduation_year: string;
+}
+
+export interface QualificationItem{
+    id: string;
+    qualification_title: string;
+    month_expiration: string;
+    year_expiration: string;
+}

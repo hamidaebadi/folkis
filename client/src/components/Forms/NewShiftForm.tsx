@@ -60,7 +60,7 @@ const NewShiftForm = () => {
                 placeholder="Lisää huomatuksia..."
                 />
 
-                <Button color="PRIMARY" type="submit" size="LARGE">Luo</Button>
+                <Button  className='btn-primary-sm' type="submit">Luo</Button>
             </Form>
 
         </Formik>

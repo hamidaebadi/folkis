@@ -1,12 +1,12 @@
 import React from 'react';
 import {Outlet} from 'react-router-dom';
 
-const Workers = () => {
+const Employees = () => {
     return(
-        <div className="workers-page">
+        <>
             <Outlet />
-        </div>
+        </>
     )
 }
 
-export default Workers;
+export default Employees;
