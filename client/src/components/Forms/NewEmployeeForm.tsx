@@ -49,7 +49,7 @@ const NewEmployeeForm = () => {
             last_name: '',
             email: '',
             phone_primary: '',
-            phone_seconday: '',
+            base_salary: '',
             street_primary: '',
             street_secondry: '',
             postal_code: '',
@@ -88,10 +88,6 @@ const NewEmployeeForm = () => {
                         placeholder='Email'
                         />
                     </div>
-                </div>
-
-                <div className='empl-form-section'>
-                    <div><h4>Contact Info</h4></div>
                     <div>
                         <TextInput 
                         name='phone_primary'
@@ -99,12 +95,13 @@ const NewEmployeeForm = () => {
                         placeholder='Phone number'
                         />
                         <TextInput 
-                        name='phone_secondry'
-                        type='tel'
-                        placeholder='Phone number (Optional)'
+                        name='base_salary'
+                        type='text'
+                        placeholder='Base Salary per hour'
                         />
                     </div>
                 </div>
+
                 <div className='empl-form-section'>
                     <div><h4>Address Info</h4></div>
                     <div>

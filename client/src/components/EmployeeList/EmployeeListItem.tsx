@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const EmployeeListItem = ({employee}:{employee: EmployeeData}) => {
     return(
-        <Link to='somepath'>
+        <Link to={`view/${employee.id}/basic-info`}>
         <div className='employee-list-item'>
             <div>icon</div>
             <div>{employee.firstName}</div>

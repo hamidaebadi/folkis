@@ -438,3 +438,48 @@ input.text-input{
     outline: none;
     background-color: #ffffff;
 }
+
+/*Employee tab's navigation*/
+.tab-navigation{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.tab-nav-link{
+    width: 100%;
+    padding: 12px 0 12px 0;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.51);
+    background-color: rgba(30, 62, 73, 0.858);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.tab-nav-link:hover{
+    width: 100%;
+    padding: 12px 0 12px 0;
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    background-color: rgb(30, 62, 73);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.tab-nav-link-active{
+    width: 100%;
+    padding: 12px 0 12px 0;
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    background-color: rgb(30, 62, 73);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Employee view page header*/
+.empl-view-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.empl-view-header > div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(197, 114, 5);
+}
