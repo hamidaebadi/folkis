@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import TabBar from '../../components/TabBar/TabBar';
 import { EmployeeData } from '../../types';
-import { initialEmployees } from '../../initialDatas';
+import { testEmployees } from '../../initialDatas';
 import EmployeeList from '../../components/EmployeeList/EmployeeList';
 import SearchField from '../../components/SearchField/SearchField';
 import Button from '../../components/Button/Button';
@@ -12,11 +12,11 @@ import NewEmployeeForm from '../../components/Forms/NewEmployeeForm';
 const EmployeeListView = () => {
 
     const [searchWord, setSearchWord] = useState<string>('')
-    const [employeeList, setEmployeeList] = useState<EmployeeData[] | null>(initialEmployees)
+    const [employeeList, setEmployeeList] = useState<EmployeeData[] | null>(testEmployees)
     const [modalOpen, setModalOpen] = useState<boolean>(false)
 
     const handleSearchInput = (event: React.FormEvent<HTMLInputElement>) => setSearchWord(event.currentTarget.value)
-    const filteredEmployees = employeeList.filter(empl => empl.firstName.toLowerCase().includes(searchWord.toLowerCase()))
+    const filteredEmployees = employeeList.filter(empl => empl.basic_info.first_name.toLowerCase().includes(searchWord.toLowerCase()))
 
         return(
             <>

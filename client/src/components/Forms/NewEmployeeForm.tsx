@@ -4,18 +4,18 @@ import TextInput from './TextInput';
 import SelectInput from './SelectInput';
 import { range } from '../../helper_funcs';
 import Button from '../Button/Button';
-import { EducationItem, QualificationItem } from '../../types';
+import { Education, Qualification } from '../../types';
 import {v4 as uuidv4} from 'uuid';
 
 const NewEmployeeForm = () => {
-    const [educations, setEducations] = useState<EducationItem[]>([])
-    const [qualifications, setQualifications] = useState<QualificationItem[]>([])
+    const [educations, setEducations] = useState<Education[]>([])
+    const [qualifications, setQualifications] = useState<Qualification[]>([])
 
     const formRef = useRef()
 
     const handleQualifications = () => {
         const formState: any= formRef.current;
-        const qualObj: QualificationItem = {
+        const qualObj: Qualification = {
             id: uuidv4(),
             qualification_title: formState.values.qualification_title,
             month_expiration: formState.values.month_expiration,
@@ -29,7 +29,7 @@ const NewEmployeeForm = () => {
 
     const handleEducations = () => {
         const formState: any= formRef.current;
-        const educationObj: EducationItem = {
+        const educationObj: Education = {
             id: uuidv4(),
             title: formState.values.education_title,
             institution_name: formState.values.institution_name,

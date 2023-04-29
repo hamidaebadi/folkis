@@ -27,25 +27,67 @@ export interface NewShiftFormValues {
     end_date: string;
 }
 
-export interface EmployeeData {
-    id: number;
-    firstName: string;
-    lastName: string;
-    role: string;
-    state: EmployeeState;
-    email: string;
+
+
+
+/* Employee's data types*/
+export interface EmployeeData{
+    id: string;
+    basic_info: EmployeeBasicInfo;
+    contact_info: EmployeeContactInfo;
+    educations: Education[];
+    qualifications: Qualification[];
+    reveiws: Review[];
+    statistics: EmployeeStatistics;
+}
+interface Review {
+    id: string;
+    title: string;
+    content: string;
+    date: Date;
 }
 
-export interface EducationItem{
+export interface Education{
     id: string;
     title: string;
     institution_name: string;
     graduation_year: string;
 }
 
-export interface QualificationItem{
+export interface Qualification{
     id: string;
     qualification_title: string;
     month_expiration: string;
     year_expiration: string;
+}
+
+export interface EmployeeBasicInfo {
+    first_name: string;
+    last_name: string;
+    personnel_code: string;
+    department: string;
+    role: string;
+    status: EmployeeState;
+}
+
+export interface EmployeeContactInfo {
+    phone_main: string;
+    phone_secondary?: string;
+    email: string;
+    address: Address
+}
+
+
+export interface Address {
+    street: string;
+    street_secondary?: string;
+    postal_code: string;
+    city: string;
+    country: string;
+}
+
+interface EmployeeStatistics{
+    worked_hours: string;
+    total_leave_days: string;
+    performance_scores: string;
 }

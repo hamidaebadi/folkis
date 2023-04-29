@@ -7,10 +7,10 @@ const EmployeeListItem = ({employee}:{employee: EmployeeData}) => {
         <Link to={`view/${employee.id}/basic-info`}>
         <div className='employee-list-item'>
             <div>icon</div>
-            <div>{employee.firstName}</div>
-            <div>{employee.lastName}</div>
-            <div>{employee.role}</div>
-            <div>{employee.state}</div>
+            <div>{employee.basic_info.first_name}</div>
+            <div>{employee.basic_info.last_name}</div>
+            <div>{employee.basic_info.role}</div>
+            <div>{employee.basic_info.status}</div>
         </div>
         </Link>
     )
