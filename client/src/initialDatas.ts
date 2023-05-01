@@ -3,13 +3,16 @@ import {EmployeeData} from './types';
 export const testEmployees: EmployeeData[] = [
     {
         id: '1',
-        basic_info: {
+        general_info: {
             first_name: 'Razia',
             last_name: 'Nouroozi',
             personnel_code: 'RaNou1200',
             department: 'Silver hemmet',
             role: 'Nurse',
             status: 'AVAILABLE',
+            birthday: new Date('August 21 1997'),
+            base_salary: '15',
+            employment_date: new Date('April 11 2021')
         },
         contact_info: {
             phone_main: '0503440952',
@@ -35,7 +38,7 @@ export const testEmployees: EmployeeData[] = [
                 id: 'qual1',
                 qualification_title: 'B - Driving License',
                 month_expiration: '10',
-                year_expiration: '06',
+                year_expiration: '2025',
             }
         ],
         reveiws: [

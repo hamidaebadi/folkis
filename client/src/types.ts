@@ -33,7 +33,7 @@ export interface NewShiftFormValues {
 /* Employee's data types*/
 export interface EmployeeData{
     id: string;
-    basic_info: EmployeeBasicInfo;
+    general_info: EmployeeGeneralInfo;
     contact_info: EmployeeContactInfo;
     educations: Education[];
     qualifications: Qualification[];
@@ -61,13 +61,16 @@ export interface Qualification{
     year_expiration: string;
 }
 
-export interface EmployeeBasicInfo {
+export interface EmployeeGeneralInfo {
     first_name: string;
     last_name: string;
     personnel_code: string;
     department: string;
     role: string;
     status: EmployeeState;
+    birthday: Date;
+    base_salary: string;
+    employment_date: Date;
 }
 
 export interface EmployeeContactInfo {

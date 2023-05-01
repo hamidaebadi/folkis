@@ -12,14 +12,16 @@
 |15.04.2023  | 2 |  Redesigb and refactore Button component, continue designing shift-card component|
 |17.04.2023  | 2 |  Add modal component |
 |18.04.2023  | 3 |  Design modal and new form for adding shift list |
-|21.05.2023  | 3 |  Sidebar Redesigning, code refactoring, new compnents for employee management|
-|21.05.2023  | 3 |  Design and impelement employee listing component with a simple name-filtering functionality|
-|22.05.2023  | 3 |  Data modeling and visualization for employee management|
-|22.05.2023  | 1 |  designing wireframe and layout for employee's creation form|
-|23.05.2023  | 3 |  Impelementation of new employee's creation form according to predesigned wireframe and data models|
-|26.05.2023  | 2 |  Design/wireframe and starting to code for employee's view page|
-|29.05.2023  | 2 |  Adding context for employee's data and refactoring EmployeeData-types|
+|21.04.2023  | 3 |  Sidebar Redesigning, code refactoring, new compnents for employee management|
+|21.04.2023  | 3 |  Design and impelement employee listing component with a simple name-filtering functionality|
+|22.04.2023  | 3 |  Data modeling and visualization for employee management|
+|22.04.2023  | 1 |  designing wireframe and layout for employee's creation form|
+|23.04.2023  | 3 |  Impelementation of new employee's creation form according to predesigned wireframe and data models|
+|26.04.2023  | 2 |  Design/wireframe and starting to code for employee's view page|
+|29.04.2023  | 2 |  Adding context for employee's data and refactoring EmployeeData-types|
+|1.05.2023  | 2 |  Implement sub-pages of Employee managment. Show data to UI|
+
 
 | Total hours |
 |-------------|
-|     49    |
+|     51    |

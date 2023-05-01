@@ -19,7 +19,7 @@ import ListView from './pages/ShiftSheets/ListView';
 import ShiftView from './pages/ShiftSheets/ShiftView';
 import EmployeeListView from './pages/Employee/EmployeeListView';
 import EmployeeView from './pages/Employee/EmployeeView';
-import EmployeeBasicInfo from './pages/Employee/EmployeeBasicInfo';
+import EmployeeGeneralInfo from './pages/Employee/EmployeeGeneralInfo';
 import EmployeeContactInfo from './pages/Employee/EmployeeContactInfo';
 import EmployeeSkills from './pages/Employee/EmployeeSkills';
 import EmployeeReveiws from './pages/Employee/EmployeeReviews';
@@ -32,7 +32,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='workers' element={<Employees />}>
       <Route path='' element={<EmployeeListView />}/>
       <Route path='view/:emplId' element={<EmployeeView />}>
-        <Route path='basic-info' element={<EmployeeBasicInfo />}/>
+        <Route path='general-info' element={<EmployeeGeneralInfo />}/>
         <Route path='contact-details' element={<EmployeeContactInfo />}/>
         <Route path='skills-qualifications' element={<EmployeeSkills />}/>
         <Route path='reviews' element={<EmployeeReveiws />}/>

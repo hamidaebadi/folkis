@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 const EmployeeListItem = ({employee}:{employee: EmployeeData}) => {
     return(
-        <Link to={`view/${employee.id}/basic-info`}>
+        <Link to={`view/${employee.id}/general-info`}>
         <div className='employee-list-item'>
             <div>icon</div>
-            <div>{employee.basic_info.first_name}</div>
-            <div>{employee.basic_info.last_name}</div>
-            <div>{employee.basic_info.role}</div>
-            <div>{employee.basic_info.status}</div>
+            <div>{employee.general_info.first_name}</div>
+            <div>{employee.general_info.last_name}</div>
+            <div>{employee.general_info.role}</div>
+            <div>{employee.general_info.status}</div>
         </div>
         </Link>
     )

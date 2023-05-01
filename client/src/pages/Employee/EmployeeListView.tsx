@@ -16,7 +16,7 @@ const EmployeeListView = () => {
     const [modalOpen, setModalOpen] = useState<boolean>(false)
 
     const handleSearchInput = (event: React.FormEvent<HTMLInputElement>) => setSearchWord(event.currentTarget.value)
-    const filteredEmployees = employeeList.filter(empl => empl.basic_info.first_name.toLowerCase().includes(searchWord.toLowerCase()))
+    const filteredEmployees = employeeList.filter(empl => empl.general_info.first_name.toLowerCase().includes(searchWord.toLowerCase()))
 
         return(
             <>
