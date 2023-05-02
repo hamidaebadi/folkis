@@ -414,8 +414,7 @@ input.text-input{
     -webkit-user-select: none;
     vertical-align: middle;
 }
-.btn-danger-sm:hover,
-.btn-danger-sm:focus{
+.btn-danger-sm:hover{
     background-color: rgb(245, 26, 26);
     color: white;
 }
@@ -543,4 +542,33 @@ input.text-input{
     -webkit-border-radius: 30px 0px 36px 0px;
     -moz-border-radius: 30px 0px 36px 0px;
     background-color: white;
+}
+
+/*Education Item Card*/
+.education-item-card,
+.license-item-card{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    padding: 20px;
+    border: 0;
+    border-radius: 20px;
+    min-width: 300px;
+    width: auto;
+}
+.education-item-card>header, section, footer,
+.license-item-card > header, section, footer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.education-item-card>section > div{
+    padding: 0.2em;
+}
+
+.empl-education-page{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }

@@ -33,7 +33,9 @@ const NewEmployeeForm = () => {
             id: uuidv4(),
             title: formState.values.education_title,
             institution_name: formState.values.institution_name,
-            graduation_year: formState.values.graduation_year
+            graduation_year: formState.values.graduation_year,
+            start: new Date(),
+            end: new Date()
         }
         setEducations(educations.concat(educationObj))
         formState.values.education_title='';

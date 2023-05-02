@@ -20,8 +20,8 @@
 |26.04.2023  | 2 |  Design/wireframe and starting to code for employee's view page|
 |29.04.2023  | 2 |  Adding context for employee's data and refactoring EmployeeData-types|
 |1.05.2023  | 2 |  Implement sub-pages of Employee managment. Show data to UI|
-
+|2.05.2023  | 3 |  Adding and designing new Card-components, code refactoring|
 
 | Total hours |
 |-------------|
-|     51    |
+|     54    |

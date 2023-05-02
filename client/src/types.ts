@@ -52,6 +52,8 @@ export interface Education{
     title: string;
     institution_name: string;
     graduation_year: string;
+    start: Date;
+    end: Date;
 }
 
 export interface Qualification{
